@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { MouseEvent, useState } from 'react';
 import { useDevice } from './device';
 
-export function Header() {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const device = useDevice();
 

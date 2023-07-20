@@ -36,6 +36,12 @@ module.exports = {
       aspectRatio: {
         'article-img': '16/10',
       },
+      transitionProperty: {
+        filter: 'filter',
+      },
+      grayscale: {
+        50: '50%',
+      },
     },
   },
   plugins: [],

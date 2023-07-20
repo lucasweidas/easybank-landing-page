@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export function Main() {
+export default function Main() {
   return (
     <main>
       <section className="flex flex-col-reverse">
@@ -12,7 +12,7 @@ export function Main() {
           </p>
           <Link
             href="#"
-            className="bg-gradient-to-r from-lime-450 to-cyan-450 text-white px-8 py-3.5 rounded-full inline-block leading-none hover:opacity-70 focus-visible:opacity-70 transition-opacity"
+            className="bg-gradient-to-r from-lime-450 to-cyan-450 text-white px-8 py-3.5 rounded-full inline-block leading-none hover:brightness-125 hover:grayscale-50 focus-visible:brightness-125 focus-visible:grayscale-50 transition-filter"
           >
             Request Invite
           </Link>
