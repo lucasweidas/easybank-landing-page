@@ -25,13 +25,17 @@ module.exports = {
       },
       backgroundImage: {
         'intro-mobile': 'url("/images/bg-intro-mobile.svg")',
+        'intro-desktop': 'url("/images/bg-intro-desktop.svg")',
       },
       screens: {
-        xsm: '375px',
+        xs: '375px',
       },
       padding: {
         18: '4.5rem',
         22: '5.5rem',
+      },
+      margin: {
+        18: '4.5rem',
       },
       aspectRatio: {
         'article-img': '16/10',
