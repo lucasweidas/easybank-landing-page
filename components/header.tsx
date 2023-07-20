@@ -17,7 +17,7 @@ export function Header() {
   }
 
   return (
-    <header className="sticky top-0 left-0 bg-white">
+    <header className="fixed top-0 left-0 right-0 bg-white z-50">
       <div className="flex justify-between items-center p-6 relative">
         <Link href="/" aria-label="Easybank Home">
           <svg className="w-[139px] h-[20px] text-blue-900">
