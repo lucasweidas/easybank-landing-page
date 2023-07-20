@@ -24,7 +24,17 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'linear-gradient-1': 'linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%))',
+        'intro-mobile': 'url("/images/bg-intro-mobile.svg")',
+      },
+      screens: {
+        xsm: '375px',
+      },
+      padding: {
+        18: '4.5rem',
+        22: '5.5rem',
+      },
+      aspectRatio: {
+        'article-img': '16/10',
       },
     },
   },

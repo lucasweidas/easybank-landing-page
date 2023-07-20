@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
       </head>
-      <body className={`${publicSans.variable} font-sans`}>{children}</body>
+      <body className={`${publicSans.variable} font-sans bg-neutral-50`}>{children}</body>
     </html>
   );
 }

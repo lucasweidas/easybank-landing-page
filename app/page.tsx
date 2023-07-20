@@ -1,6 +1,6 @@
 import DeviceProvider from '@/components/device';
 import { Header } from '@/components/header';
-import Image from 'next/image';
+import { Main } from '@/components/main';
 import Link from 'next/link';
 
 export default function Home() {
@@ -9,135 +9,46 @@ export default function Home() {
       <DeviceProvider>
         <Header />
       </DeviceProvider>
-      <main>
-        <section>
-          <div>
-            <h1>Next generation digital banking</h1>
-            <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
-            <Link href="#">Request Invite</Link>
-          </div>
-          <div>
-            <Image src="/images/image-mockups.png" alt="easybank mobile app mockups" width={767} height={939} priority />
-          </div>
-        </section>
-        <section>
-          <div>
-            <h2>Why choose Easybank?</h2>
-            <p>We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
-          </div>
-          <ul>
-            <li>
-              <Image src="/images/icon-online.svg" alt="" width={72} height={72} aria-hidden="true" />
-              <h3>Online Banking</h3>
-              <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
-            </li>
-            <li>
-              <Image src="/images/icon-budgeting.svg" alt="" width={72} height={72} aria-hidden="true" />
-              <h3>Simple Budgeting</h3>
-              <p>See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.</p>
-            </li>
-            <li>
-              <Image src="/images/icon-onboarding.svg" alt="" width={72} height={72} aria-hidden="true" />
-              <h3>Fast Onboarding</h3>
-              <p>We don’t do branches. Open your account in minutes online and start taking control of your finances right away.</p>
-            </li>
-            <li>
-              <Image src="/images/icon-api.svg" alt="" width={72} height={72} aria-hidden="true" />
-              <h3>Open API</h3>
-              <p>Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.</p>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h2>Latest Articles</h2>
-          <ul>
-            <li>
-              <Image src="/images/image-currency.jpg" alt="different types of currency" width={533} height={400} />
-              <div>
-                <p>By Claire Robinson</p>
-                <h3>
-                  <Link href="#">Receive money in any currency with no fees</Link>
-                </h3>
-                <p>The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single ...</p>
-              </div>
-            </li>
-            <li>
-              <Image src="/images/image-restaurant.jpg" alt="a person eating a dish in a restaurant" width={600} height={400} />
-              <div>
-                <p>By Wilson Hutton</p>
-                <h3>
-                  <Link href="#">Treat yourself without worrying about money</Link>
-                </h3>
-                <p>Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you ...</p>
-              </div>
-            </li>
-            <li>
-              <Image
-                src="/images/image-plane.jpg"
-                alt="view of the plane's wing with the sun on the horizon from the perspective of the plane's window"
-                width={602}
-                height={400}
-              />
-              <div>
-                <p>By Wilson Hutton</p>
-                <h3>
-                  <Link href="#">Take your Easybank card wherever you go</Link>
-                </h3>
-                <p>We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you ...</p>
-              </div>
-            </li>
-            <li>
-              <Image src="/images/image-confetti.jpg" alt="confetti falling" width={600} height={400} />
-              <div>
-                <p>By Claire Robinson</p>
-                <h3>
-                  <Link href="#">Our invite-only Beta accounts are now live!</Link>
-                </h3>
-                <p>After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </main>
+      <Main />
       <footer>
         <div>
           <Link href="/" aria-label="Easybank Home">
-            <svg>
+            <svg className="w-[139px] h-[20px]">
               <use xlinkHref="#logo" />
             </svg>
           </Link>
           <ul>
             <li>
               <Link href="#" aria-label="Facebook">
-                <svg>
+                <svg className="w-[20px] h-[20px]">
                   <use xlinkHref="#facebook-icon" />
                 </svg>
               </Link>
             </li>
             <li>
               <Link href="#" aria-label="YouTube">
-                <svg>
+                <svg className="w-[21px] h-[20px]">
                   <use xlinkHref="#youtube-icon" />
                 </svg>
               </Link>
             </li>
             <li>
               <Link href="#" aria-label="Twitter">
-                <svg>
+                <svg className="w-[21px] h-[18px]">
                   <use xlinkHref="#twitter-icon" />
                 </svg>
               </Link>
             </li>
             <li>
               <Link href="#" aria-label="Pinterest">
-                <svg>
+                <svg className="w-[20px] h-[20px]">
                   <use xlinkHref="#pinterest-icon" />
                 </svg>
               </Link>
             </li>
             <li>
               <Link href="#" aria-label="Instagram">
-                <svg>
+                <svg className="w-[21px] h-[20px]">
                   <use xlinkHref="#instagram-icon" />
                 </svg>
               </Link>
