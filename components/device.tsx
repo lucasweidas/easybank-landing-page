@@ -1,15 +1,19 @@
 'use client';
 import { device } from '@/interfaces';
-import { ReactNode, createContext, useContext, useEffect, useState } from 'react';
+import { ReactNode, createContext, useContext, useLayoutEffect, useState } from 'react';
 
-const DeviceContext = createContext<device>('mobile');
+const DeviceContext = createContext<device>('sm');
 export default function DeviceProvider({ children }: { children: ReactNode }) {
-  const [device, setDevice] = useState<device>('mobile');
+  const [device, setDevice] = useState<device>('sm');
 
-  useEffect(() => {
+  useLayoutEffect(() => {
+    if (window.innerWidth >= 1024) {
+      setDevice('lg');
+    }
+
     const mediaQuery = window.matchMedia('(min-width: 1024px)');
     function handleChange({ matches }: MediaQueryListEvent) {
-      setDevice(matches ? 'desktop' : 'mobile');
+      setDevice(matches ? 'lg' : 'sm');
     }
 
     mediaQuery.addEventListener('change', handleChange);
