@@ -1,42 +1,14 @@
+import DeviceProvider from '@/components/device';
+import { Header } from '@/components/header';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
   return (
     <>
-      <header>
-        <Link href="/" aria-label="Easybank Home">
-          <svg>
-            <use xlinkHref="#logo" />
-          </svg>
-        </Link>
-        <button aria-label="Guide">
-          <svg>
-            <use xlinkHref="#hamburger-icon" />
-            <use xlinkHref="#close-icon" />
-          </svg>
-        </button>
-        <nav aria-label="Primary">
-          <ul>
-            <li>
-              <Link href="#">Home</Link>
-            </li>
-            <li>
-              <Link href="#">About</Link>
-            </li>
-            <li>
-              <Link href="#">Contact</Link>
-            </li>
-            <li>
-              <Link href="#">Blog</Link>
-            </li>
-            <li>
-              <Link href="#">Careers</Link>
-            </li>
-          </ul>
-        </nav>
-        <Link href="#">Request Invite</Link>
-      </header>
+      <DeviceProvider>
+        <Header />
+      </DeviceProvider>
       <main>
         <section>
           <div>
@@ -197,7 +169,7 @@ export default function Home() {
           <p>© Easybank. All Rights Reserved</p>
         </div>
       </footer>
-      <svg className="invisible -z-50 absolute w-0" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg className="invisible -z-50 absolute w-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <symbol id="logo" viewBox="0 0 139 20">
           <defs>
             <linearGradient id="a" x1="72.195%" x2="17.503%" y1="0%" y2="100%">
