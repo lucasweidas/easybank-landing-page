@@ -35,7 +35,7 @@ export default function Main() {
             We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.
           </p>
         </div>
-        <ul className="grid justify-items-center mt-12 xs:mt-14 gap-9 max-w-xl md:max-w-3xl mx-auto md:mt-18 md:grid-cols-2 md:gap-10">
+        <ul className="grid justify-items-center mt-12 xs:mt-14 gap-9 md:max-w-3xl mx-auto md:mt-18 sm:grid-cols-2 md:gap-10">
           <li className="flex flex-col items-center">
             <Image src="/images/icon-online.svg" alt="" width={72} height={72} aria-hidden="true" />
             <h3 className="text-blue-900 mt-6 text-xl md:text-2xl md:mt-10">Online Banking</h3>
@@ -68,7 +68,7 @@ export default function Main() {
       </section>
       <section className="px-4 py-18 xs:px-6 xs:py-22">
         <h2 className="text-blue-900 text-2xl xs:text-3xl mb-6 xs:mb-8 text-center md:text-4xl md:mb-12">Latest Articles</h2>
-        <ul className="grid md:grid-cols-[repeat(2,minmax(21.75rem,23.125rem))] gap-4 xs:gap-6 max-w-xl md:max-w-3xl mx-auto justify-center md:gap-7">
+        <ul className="grid sm:grid-cols-2 gap-4 xs:gap-6 max-w-3xl mx-auto justify-center md:gap-7">
           <li className="bg-white rounded-md overflow-hidden">
             <Image
               src="/images/image-currency.jpg"
