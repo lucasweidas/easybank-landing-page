@@ -36,8 +36,10 @@ module.exports = {
       padding: {
         18: '4.5rem',
         22: '5.5rem',
+        26: '6.5rem',
+        42: '10.5rem',
       },
-      margin: {
+      gap: {
         18: '4.5rem',
       },
       aspectRatio: {
@@ -48,6 +50,9 @@ module.exports = {
       },
       grayscale: {
         50: '50%',
+      },
+      content: {
+        'intro-desktop': 'url("/images/bg-intro-desktop.svg")',
       },
     },
   },
