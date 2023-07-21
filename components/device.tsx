@@ -1,6 +1,12 @@
 'use client';
 import { device } from '@/interfaces';
-import { ReactNode, createContext, useContext, useLayoutEffect, useState } from 'react';
+import {
+  ReactNode,
+  createContext,
+  useContext,
+  useLayoutEffect,
+  useState,
+} from 'react';
 
 const DeviceContext = createContext<device>('sm');
 export default function DeviceProvider({ children }: { children: ReactNode }) {
@@ -21,7 +27,9 @@ export default function DeviceProvider({ children }: { children: ReactNode }) {
     return () => mediaQuery.removeEventListener('change', handleChange);
   }, [device]);
 
-  return <DeviceContext.Provider value={device}>{children}</DeviceContext.Provider>;
+  return (
+    <DeviceContext.Provider value={device}>{children}</DeviceContext.Provider>
+  );
 }
 
 export function useDevice() {

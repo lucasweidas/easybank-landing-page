@@ -11,7 +11,11 @@ export default function Home() {
       </DeviceProvider>
       <Main />
       <Footer />
-      <svg className="invisible -z-50 absolute w-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg
+        className="invisible absolute -z-50 w-0 overflow-hidden"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
         <symbol id="logo" viewBox="0 0 139 20">
           <defs>
             <linearGradient id="a" x1="72.195%" x2="17.503%" y1="0%" y2="100%">
