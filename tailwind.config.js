@@ -30,6 +30,9 @@ module.exports = {
       screens: {
         xs: '375px',
       },
+      width: {
+        'min-lg': 'min(100% - 3rem, 69.5rem)',
+      },
       padding: {
         18: '4.5rem',
         22: '5.5rem',
