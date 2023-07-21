@@ -17,7 +17,7 @@ export default function Main() {
             Request Invite
           </Link>
         </div>
-        <div className="bg-intro-mobile bg-no-repeat bg-left-bottom bg-cover overflow-hidden flex justify-center md:bg-intro-desktop md:bg-center md:bg-contain lg:overflow-visible lg:absolute lg:-right-72 lg:-top-10 isolate lg:bg-none lg:after:content-intro-desktop lg:after:absolute lg:after:-z-10 lg:after:-left-48 lg:after:bottom-14">
+        <div className="bg-intro-mobile bg-no-repeat bg-left-bottom bg-cover overflow-hidden flex justify-center md:bg-intro-desktop md:bg-center md:bg-contain lg:overflow-visible lg:absolute lg:-right-72 lg:-top-10 isolate lg:bg-none lg:after:content-intro-desktop lg:after:absolute lg:after:-z-10 lg:after:-left-36 xl:after:-left-48 lg:after:bottom-14">
           <Image
             src="/images/image-mockups.png"
             alt="easybank mobile app mockups"
