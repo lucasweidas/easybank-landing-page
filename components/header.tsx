@@ -69,7 +69,6 @@ export default function Header() {
         <button
           className="lg:hidden"
           aria-label="Guide"
-          aria-controls="header-guide"
           aria-pressed={isOpen}
           onClick={toggleGuide}
         >
@@ -113,7 +112,6 @@ function MobileGuideWrapper({ children, onToggle }: MobileGuideWrapperProps) {
 
   return (
     <motion.div
-      id="header-guide"
       className="absolute left-0 top-full min-h-[calc(100vh-100%)] w-full bg-gradient-to-b from-blue-900 to-blue-900/10 p-6"
       onClick={handleOverlayClick}
       variants={OVERLAY_VARIANTS}
