@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Main() {
   return (
-    <main className="lg:overflow-hidden">
+    <main className="overflow-hidden">
       <section className="mx-auto flex flex-col-reverse lg:relative lg:w-min-lg lg:flex-row lg:items-center lg:justify-start lg:gap-12">
         <div className="relative -top-6 max-w-xl px-4 pb-12 text-center max-lg:mx-auto xs:-top-8 xs:px-6 xs:pb-14 md:top-0 md:mt-8 md:pb-20 lg:w-[28rem] lg:px-0 lg:pb-42 lg:pt-64 lg:text-start">
           <h1 className="mb-4 text-3xl text-blue-900 xs:text-4xl md:mb-6 md:text-5xl md:leading-tight">
@@ -21,14 +21,14 @@ export default function Main() {
             Request Invite
           </Link>
         </div>
-        <div className="isolate flex justify-center overflow-hidden bg-intro-mobile bg-cover bg-left-bottom bg-no-repeat md:bg-intro-desktop md:bg-contain md:bg-center lg:absolute lg:-right-72 lg:-top-10 lg:overflow-visible lg:bg-none lg:after:absolute lg:after:-left-36 lg:after:bottom-14 lg:after:-z-10 lg:after:content-intro-desktop xl:after:-left-48">
+        <div className="flex justify-center bg-intro-mobile bg-cover bg-left-bottom bg-no-repeat md:bg-intro-desktop md:bg-contain md:bg-center lg:absolute lg:-right-72 lg:-top-10 lg:isolate lg:bg-none lg:after:absolute lg:after:-left-36 lg:after:bottom-14 lg:after:-z-10 lg:after:content-intro-desktop xl:after:-left-48">
           <Image
             src="/images/image-mockups.png"
             alt="easybank mobile app mockups"
             width={767}
             height={939}
             priority
-            className="relative -top-14 max-w-lg xs:-top-16 md:top-0 lg:max-w-none"
+            className="relative -top-14 min-w-[22rem] max-w-lg xs:-top-16 md:top-0 lg:max-w-none"
           />
         </div>
       </section>

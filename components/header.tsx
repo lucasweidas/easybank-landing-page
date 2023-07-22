@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { MouseEvent, useState } from 'react';
 import { AnimatePresence, Variants, motion } from 'framer-motion';
 import { useDevice } from './device';
-import { GuideProps, MobileGuideWrapperProps } from '@/interfaces';
+import { MobileGuideWrapperProps } from '@/interfaces';
 
 const OVERLAY_VARIANTS: Variants = {
   initial: {
@@ -87,7 +87,7 @@ export default function Header() {
           <AnimatePresence initial={false}>
             {isOpen && (
               <MobileGuideWrapper onToggle={toggleGuide}>
-                <Guide />
+                <Guide className="flex-col text-lg" />
               </MobileGuideWrapper>
             )}
           </AnimatePresence>
@@ -114,7 +114,7 @@ function MobileGuideWrapper({ children, onToggle }: MobileGuideWrapperProps) {
   return (
     <motion.div
       id="header-guide"
-      className="group max-lg:absolute max-lg:left-0 max-lg:top-full max-lg:min-h-[calc(100vh-100%)] max-lg:w-full max-lg:bg-gradient-to-b max-lg:from-blue-900 max-lg:to-blue-900/10 max-lg:p-6"
+      className="absolute left-0 top-full min-h-[calc(100vh-100%)] w-full bg-gradient-to-b from-blue-900 to-blue-900/10 p-6"
       onClick={handleOverlayClick}
       variants={OVERLAY_VARIANTS}
       initial="initial"
@@ -122,6 +122,7 @@ function MobileGuideWrapper({ children, onToggle }: MobileGuideWrapperProps) {
       exit="exit"
     >
       <motion.div
+        className="rounded-md bg-white p-8"
         variants={WRAPPER_VARIANTS}
         initial="initial"
         animate="visible"
@@ -133,14 +134,12 @@ function MobileGuideWrapper({ children, onToggle }: MobileGuideWrapperProps) {
   );
 }
 
-function Guide({ className }: GuideProps) {
+function Guide({ className }: { className?: string }) {
   return (
-    <ul
-      className={`flex items-center gap-7 max-lg:flex-col max-lg:rounded-md max-lg:bg-white max-lg:p-8 max-lg:text-lg ${className}`}
-    >
+    <ul className={`flex items-center gap-7 ${className}`}>
       <li className="leading-none">
         <Link
-          href="#"
+          href="/"
           className="inline-flex text-blue-900 transition-colors hover:text-gray-400 focus-visible:text-gray-400 lg:relative lg:h-full lg:items-center lg:py-8 lg:text-gray-400 lg:after:absolute lg:after:bottom-0 lg:after:left-0 lg:after:h-1 lg:after:w-full lg:after:origin-left lg:after:scale-x-0 lg:after:bg-gradient-to-r lg:after:from-lime-450 lg:after:to-cyan-450 lg:after:transition-transform lg:hover:text-blue-900 lg:hover:after:scale-x-100 lg:focus-visible:text-blue-900"
         >
           Home
